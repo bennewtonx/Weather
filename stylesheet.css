@@ -40,14 +40,13 @@ header {
     height: 44px;
     width: 42px;
 }
-
+/*index page css*/
 #ukBackground {
     height: 438px;
     width: 357px;
     margin: 0 0 0 21px;
 }
 
-/* index card code*/
 .indexCards {
     width: 386px;
     display: grid;
@@ -171,6 +170,7 @@ header {
 #uv img {
     height: 63px;
     width: 63px;
+    margin-top: 13px;
 }
 
 #pollen {
@@ -190,6 +190,7 @@ header {
 #pollen img {
     height: 63px;
     width: 63px;
+    margin-top: 13px;
 }
 
 #weather {
@@ -209,6 +210,7 @@ header {
 #weather img {
     height: 63px;
     width: 63px;
+    margin-top: 13px;
 }
 
 #flood {
@@ -228,4 +230,40 @@ header {
 #flood img {
     height: 63px;
     width: 63px;
+}
+
+/*city page css*/
+
+.cityName {
+    text-align: center;
+    margin: 10px 0 10px 21px;
+
+    font-size: 24px;
+    font-weight: 200;
+}
+
+.cityTempGraph {
+
+    height: 363px;
+    width: 387px;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    margin: 10px 0 10px 21px;
+}
+
+.cityCards {
+
+    width: 386px;
+    display: grid;
+    grid-template: repeat(8, auto);
+    grid-template-areas: 
+    "uv uv"
+    "uv uv"
+    "pollen pollen"
+    "pollen pollen"
+    "weather weather"
+    "weather weather"
+    "flood flood"
+    "flood flood";
+
 }
