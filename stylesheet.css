@@ -1,9 +1,6 @@
 body {
     background-color: #ECECEC;
-}
-
-@media (max-width: 600px;) {
-    
+    width: 438px;
 }
 
 h1, h3, p {
@@ -14,9 +11,221 @@ h1 {
     font-size: 36px;
 }
 
-.header {
+header {
+    height: 153px;
+    width: 428px;
     display: grid;
+    grid-template: repeat(2, 3fr);
     grid-template-areas: 
-    "" "title" ""
-    "searchBar" "searchBar" "searchBar";
+    "title title title"
+    "searchBar searchBar locationButton";
+}
+
+.title {
+    grid-area: title;
+    text-align: center;
+}
+
+.searchBar {
+    grid-area: searchBar;
+    height: 44px;
+    width: 346px;
+    border: none;
+    font-size: 20px;
+    margin: 0 0 0 21px;
+}
+
+.locationButton {
+    grid-area: locationButton;
+    height: 44px;
+    width: 42px;
+}
+
+#ukBackground {
+    height: 438px;
+    width: 357px;
+    margin: 0 0 0 21px;
+}
+
+/* index card code*/
+.indexCards {
+    width: 386px;
+    display: grid;
+    grid-template: repeat(12, auto);
+    grid-template-areas: 
+    "miniUV miniPollen"
+    "miniWeather miniWeather"
+    "miniFlood miniFlood"
+    "uv uv"
+    "uv uv"
+    "pollen pollen"
+    "pollen pollen"
+    "weather weather"
+    "weather weather"
+    "flood flood"
+    "flood flood";
+}
+
+#miniUV {
+    grid-area: miniUV;
+
+    height: 114px;
+    width: 180px;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    margin: 10px 10px 10px 21px;
+
+    text-align: center;
+    font-size: 20px;
+    font-weight: medium;
+
+}
+
+#miniUV img {
+    height: 63px;
+    width: 63px;
+    margin-top: -20px;
+}
+
+#miniPollen {
+    grid-area: miniPollen;
+
+    height: 114px;
+    width: 180px;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    margin: 10px 0 10px 10px;
+
+    text-align: center;
+    font-size: 20px;
+    font-weight: medium;
+}
+
+#miniPollen img {
+    height: 63px;
+    width: 63px;
+    margin-top: -20px;
+}
+
+#miniWeather {
+    grid-area: miniWeather;
+
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+
+    font-size: 20px;
+
+    height: 51px;
+    width: 387px;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    margin: 10px 0 10px 21px;
+}
+
+#miniWeather img {
+    height: 42px;
+    width: 40px;
+    margin-right: 38px;
+}
+
+
+#miniFlood {
+    grid-area: miniFlood;
+
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+
+    font-size: 20px;
+
+    height: 51px;
+    width: 387px;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    margin: 10px 0 10px 21px;
+}
+
+#miniFlood img {
+    height: 42px;
+    width: 40px;
+    margin-right: 38px;
+}
+
+#uv {
+    grid-area: uv;
+
+    height: 204px;
+    width: 387px;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    margin: 10px 0 10px 21px;
+
+    text-align: center;
+    font-size: 20px;
+    font-weight: medium;
+}
+
+#uv img {
+    height: 63px;
+    width: 63px;
+}
+
+#pollen {
+    grid-area: pollen;
+
+    height: 204px;
+    width: 387px;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    margin: 10px 0 10px 21px;
+
+    text-align: center;
+    font-size: 20px;
+    font-weight: medium;
+}
+
+#pollen img {
+    height: 63px;
+    width: 63px;
+}
+
+#weather {
+    grid-area: weather;
+
+    height: 204px;
+    width: 387px;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    margin: 10px 0 10px 21px;
+
+    text-align: center;
+    font-size: 20px;
+    font-weight: medium;
+}
+
+#weather img {
+    height: 63px;
+    width: 63px;
+}
+
+#flood {
+    grid-area: flood;
+
+    height: 204px;
+    width: 387px;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    margin: 10px 0 10px 21px;
+
+    text-align: center;
+    font-size: 20px;
+    font-weight: medium;
+}
+
+#flood img {
+    height: 63px;
+    width: 63px;
 }
