@@ -11,7 +11,7 @@ h1 {
     font-size: 36px;
 }
 
-header {
+.header {
     height: 153px;
     width: 428px;
     display: grid;
@@ -33,6 +33,7 @@ header {
     border: none;
     font-size: 20px;
     margin: 0 0 0 21px;
+    border-radius: 12px;
 }
 
 .locationButton {
@@ -45,6 +46,41 @@ header {
     height: 438px;
     width: 357px;
     margin: 0 0 0 21px;
+}
+
+.ukMap p {
+
+    background-color: #FFFFFF;
+    border: #FFFFFF;
+    border-style: solid;
+    border-radius: 12px;
+    padding-right: ;
+    display: inline-block;
+
+}
+
+#edinburgh {
+    position: absolute;
+    top: 262px;
+    left: 245px;
+}
+
+#newcastle {
+    position: absolute;
+    top: 330px;
+    left: 290px;
+}
+
+#manchester {
+    position: absolute;
+    top: 410px;
+    left: 150px;
+}
+
+#london {
+    position: absolute;
+    top: 480px;
+    left: 295px;
 }
 
 .indexCards {
@@ -77,11 +113,14 @@ header {
     text-align: center;
     font-size: 20px;
     font-weight: medium;
+}
 
+.grow {
+    transform: scale(1.5);
 }
 
 #miniUV img {
-    height: 100px;
+    height: 63px;
     width: 63px;
     margin-top: -20px;
 }

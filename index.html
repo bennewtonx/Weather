@@ -4,6 +4,7 @@
 <head>
     <title>Simple Weather</title>
     <link rel="stylesheet" href="stylesheet.css">
+    <script src="jscript.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500;800&display=swap" rel="stylesheet">
@@ -12,35 +13,42 @@
 
 <body>
 
-<header>
+<div class="header">
 
     <h1 class="title">WEATHER</h1>
     <input class="searchBar" type="text" placeholder="Enter a Town, City or UK Postcode">
     <p class="locationButton">📍</p>
 
-</header>
+</div>
 
-<img id="UK Map.png">
+    <div class="ukMap">
+
+        <img id="ukBackground" src="uk map.png">
+        <p id="edinburgh">Edinburgh</p>
+        <p id="newcastle">Newcastle</p>
+        <p id="manchester">Manchester</p>
+        <p id="london">London</p>
+    </div>
 
 <div class="indexCards">
 
-    <div id="miniUV">
+    <div id="miniUV" onclick="miniUV">
 
-        <img src="Sunny.png">
+        <img src="sun emoji.png">
         <p>UV INDEX</p>
 
     </div>
 
     <div id="miniPollen"> 
 
-        <img src="Tree.png">
+        <img src="tree emoji.png">
         <p>POLLEN COUNT</p>
 
     </div>
 
     <div id="miniWeather">
 
-        <img src="">
+        <img src="temp emoji.png">
         <p>WEATHER WARNINGS</p>
 
     </div>
@@ -54,14 +62,14 @@
 
     <div id="uv">
 
-        <img src="Sunny.png">
+        <img src="sun emoji.png">
         <p>UV INDEX</p>
 
     </div>
 
     <div id="pollen">
 
-        <img src="Tree.png">
+        <img src="tree emoji.png">
         <p>POLLEN</p>
 
     </div>
