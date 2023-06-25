@@ -36,7 +36,7 @@ h1 {
     border-radius: 12px;
 }
 
-.locationButton {
+.searchButton {
     grid-area: locationButton;
     height: 44px;
     width: 42px;
@@ -48,39 +48,147 @@ h1 {
     margin: 0 0 0 21px;
 }
 
-.ukMap p {
+.ukMap p{
+
+    padding-right: ;
+    width: max-content;
+    font-size: 20;
+
+}
+
+.ediDiv {
+    position: absolute; 
+    top: 262px;
+    left: 245px;
+    display: flex;
+    flex-wrap: nowrap;
 
     background-color: #FFFFFF;
     border: #FFFFFF;
     border-style: solid;
     border-radius: 12px;
-    padding-right: ;
+
     display: inline-block;
 
 }
 
 #edinburgh {
-    position: absolute;
-    top: 262px;
-    left: 245px;
+
+    display: inline-block;
+
+}
+
+
+#ediWeatherIcon {
+
+    display: inline-block;
+    vertical-align: middle;
+    
+    height: 20px;
+    width: 20px; 
+    padding-top: 0;
+}
+
+.ncldiv {
+    position: absolute; 
+    top: 330px;
+    left: 290px;   
+
+    display: flex;
+    flex-wrap: nowrap;
+
+    background-color: #FFFFFF;
+    border: #FFFFFF;
+    border-style: solid;
+    border-radius: 12px;
+
+    display: inline-block;
+
 }
 
 #newcastle {
-    position: absolute;
-    top: 330px;
-    left: 290px;
+
+    display: inline-block;
+
+}
+
+
+#nclWeatherIcon {
+
+    display: inline-block;
+    vertical-align: middle;
+    
+    height: 20px;
+    width: 20px; 
+    padding-top: 0;
+}
+
+.manDiv {
+    position: absolute; 
+    top: 410px;
+    left: 150px;
+
+    display: flex;
+    flex-wrap: nowrap;
+
+    background-color: #FFFFFF;
+    border: #FFFFFF;
+    border-style: solid;
+    border-radius: 12px;
+
+    display: inline-block;
+
 }
 
 #manchester {
-    position: absolute;
-    top: 410px;
-    left: 150px;
+
+    display: inline-block;
+
+}
+
+
+#manWeatherIcon {
+
+    display: inline-block;
+    vertical-align: middle;
+    
+    height: 20px;
+    width: 20px; 
+    padding-top: 0;
+}
+
+.londonDiv {
+    position: absolute; 
+    top: 480px;
+    left: 295px;  
+
+    display: flex;
+    flex-wrap: nowrap;
+
+    background-color: #FFFFFF;
+    border: #FFFFFF;
+    border-style: solid;
+    border-radius: 12px;
+
+    display: inline-block;
+
 }
 
 #london {
-    position: absolute;
-    top: 480px;
-    left: 295px;
+
+    display: inline-block;
+
+}
+
+
+#londonWeatherIcon {
+
+    display: inline-block;
+    vertical-align: middle;
+    
+    height: 20px;
+    width: 20px; 
+    padding-top: 0;
 }
 
 .indexCards {

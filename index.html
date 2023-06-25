@@ -16,17 +16,37 @@
 
     <h1 class="title">WEATHER</h1>
     <input class="searchBar" id="city"type="text" placeholder="Enter a Town, City or UK Postcode">
-    <p class="locationButton">📍</p>
+    <button class="searchButton"><a href="cityPage.html">📍</button></a>
 
 </div>
 
     <div class="ukMap">
 
         <img id="ukBackground" src="uk map.png">
-        <p id="edinburgh">Edinburgh</p>
-        <p id="newcastle">Newcastle</p>
-        <p id="manchester">Manchester</p>
-        <p id="london">London</p>
+
+        <div class="ediDiv">
+
+            <img id="ediWeatherIcon" src="sun emoji.png"> <p id="edinburgh">Edinburgh</p>
+
+        </div>
+
+        <div class="ncldiv">
+
+            <img id="nclWeatherIcon" src="sun emoji.png"> <p id="newcastle">Newcastle</p>
+
+        </div>
+
+        <div class="manDiv">
+
+            <img id="manWeatherIcon" src="sun emoji.png"> <p id="manchester">Manchester</p>
+
+        </div>
+
+        <div class="londonDiv">
+
+            <img id="londonWeatherIcon" src="sun emoji.png">  <p id="london">London</p>
+
+        </div>
     </div>
 
 <div class="indexCards">
@@ -103,10 +123,5 @@
 
 <script src="jscript.js"></script>
 <script src="forecast.js"></script>
-<script>
-
-checkWeather();
-
-</script>
 
 </body>
