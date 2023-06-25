@@ -1,5 +1,4 @@
-const document.getElementById(miniUV);
+ document.getElementById(miniUV);
 
-function grow {
+function grow ()
     miniUV.classList.add("grow");
-}
