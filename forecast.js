@@ -1,21 +1,12 @@
-apikey = "NkzamyLHQXaXOTFC1KDG7OR3cPCe7L2S";
+const apiKey = "30eb778dde414e85e06c8f0f558ecdef";
+const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=metric&q=london";
 
-const getCity = async ("newcastle upon tyne") ; {
-    const baseUrl =
-    "https://dataservice.accuweather.com/locations/v1/cities/search";
-    const queryParameters = `?apikey=${apikey}&q=${city}`;
-    const response = await fetch(baseUrl + queryParameters);
-    const data = await response.json();
-    return data[0];
-    };
+async function checkWeather () {
+    const response = await fetch(apiUrl + `&appid=${apiKey}`);
+    var data = await response.json();
 
-    console.log(getCity);
+    console.log(data);
 
+}
 
-const getWeather = async ("329683"); {
-    const baseUrl = http://dataservice.accuweather.com/forecasts/v1/hourly/24hour/329683
-    const queryParameters = `?apikey=${apikey}`;
-    const response = await fetch (baseUrl + queryParameters);
-    const data = await response.json();
-    return data[0];
-};
+checkWeather();
