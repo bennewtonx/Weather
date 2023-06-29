@@ -1,6 +1,9 @@
+/*Basic Styling*/
+
 body {
     background-color: #ECECEC;
     width: 438px;
+    padding: 0 4% 4% 5%;
 }
 
 h1, h3, p {
@@ -11,10 +14,17 @@ h1 {
     font-size: 36px;
 }
 
+/*.blur {
+
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    
+}*/
+
 /*Header & Search Bar*/
 .header {
     height: 153px;
-    width: 428px;
+    width: 438px;
     display: grid;
     grid-template: repeat(2, 3fr);
     grid-template-areas: 
@@ -29,8 +39,8 @@ h1 {
 
 .searchBar {
     grid-area: searchBar;
-    height: 44px;
-    width: 346px;
+    height: 90%;
+    width: 90%;
     border: none;
     font-size: 20px;
     margin: 0 0 0 21px;
@@ -39,9 +49,335 @@ h1 {
 
 .searchButton {
     grid-area: locationButton;
-    height: 44px;
-    width: 42px;
+    height: 90%;
+    width: 60%;
 }
+
+/*City Weather*/
+
+.cityWeather {
+
+    display: grid;
+
+    grid-template: repeat(4, 4fr);
+    grid-template-areas: 
+    ". cityName cityName ."
+    ". mainCityImg mainCityImg ."
+    "temp temp temp temp"
+    "tempForecast tempForecast tempForecast tempForecast";
+
+    height: 428px;
+    width: 390px;
+    border-radius: 60px;
+    margin: 4% 4% 4% 4%;
+    padding: 0 0 4% 0;
+
+    background-color: #D9D9D9;
+
+}
+
+.cityName {
+
+    grid-area: cityName;
+    font-size: 20px;
+    text-align: center;
+
+    border-bottom: solid;
+    border-width: thin;
+
+    margin-bottom: 5%;
+
+}
+
+#mainCityImg {
+
+    grid-area: mainCityImg;
+    height: 140px;
+    max-width: 100%;
+    padding: 5% 25% 0 22%;
+
+}
+
+.temp {
+    grid-area: temp;
+}
+
+/*Weather Forecast*/
+
+.tempForecast {
+
+    grid-area: tempForecast;
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0 4% 0 4%;
+    justify-content: space-evenly;
+    
+}
+
+.threeHours {
+
+    grid-area: threeHours;
+    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "threeImg"
+    "threeHourTemp"
+    "threeHourTime";
+
+    height: 123px;
+    width: 72px;
+    border-radius: 50px;
+
+    text-align: center;
+
+    background-color: #ECECEC;
+    
+    margin: 0 4% 0 4%;
+
+    display: inline-block;
+}
+
+.threeHoursImg {
+
+    grid-area: threeImg;
+
+    height: 22%;
+    width: 40%;
+
+    vertical-align: top;
+    justify-content: center;
+    margin-top: 5%;
+
+}
+
+.threeHours p {
+
+    font-size: 20px;  
+}
+
+.threeHourTemp {
+    grid-area: threeHourTemp;
+    margin: 20% 0 0 0;
+}
+
+hr {
+    width: 40%;
+}
+
+.threeHourTempText {
+
+    text-align: center;
+    
+
+}
+
+#threeHourTime {
+
+    grid-area: threeHourTime;
+    margin-left: 5px;
+    margin-top: 0;
+
+}
+
+.sixHours {
+
+    grid-area: threeHours;
+    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "sixImg"
+    "sixHourTemp"
+    "sixHourTime";
+
+    height: 123px;
+    width: 72px;
+    border-radius: 50px;
+
+    text-align: center;
+
+    background-color: #ECECEC;
+    
+    margin-right: 4%;
+
+    display: inline-block;
+}
+
+.sixHoursImg {
+
+    grid-area: sixImg;
+
+    height: 22%;
+    width: 40%;
+
+    vertical-align: top;
+    justify-content: center;
+    margin-top: 5%;
+
+}
+
+.sixHours p {
+
+    font-size: 20px;  
+}
+
+.sixHourTemp {
+    grid-area: sixHourTemp;
+    margin: 20% 0 0 0;
+}
+
+hr {
+    width: 40%;
+}
+
+.sixHourTempText {
+
+    text-align: center;
+    
+
+}
+
+#sixHourTime {
+
+    grid-area: sixHourTime;
+    margin-left: 5px;
+    margin-top: 0;
+
+}
+
+.nineHours {
+
+    grid-area: threeHours;
+    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "nineImg"
+    "nineHourTemp"
+    "nineHourTime";
+
+    height: 123px;
+    width: 72px;
+    border-radius: 50px;
+
+    text-align: center;
+
+    background-color: #ECECEC;
+    
+    margin-right: 4%;
+
+    display: inline-block;
+}
+
+.nineHoursImg {
+
+    grid-area: nineImg;
+
+    height: 22%;
+    width: 40%;
+
+    vertical-align: top;
+    justify-content: center;
+    margin-top: 5%;
+
+}
+
+.nineHours p {
+
+    font-size: 20px;  
+}
+
+.nineHourTemp {
+    grid-area: nineHourTemp;
+    margin: 20% 0 0 0;
+}
+
+hr {
+    width: 40%;
+}
+
+.nineHourTempText {
+
+    text-align: center;
+    
+
+}
+
+#nineHourTime {
+
+    grid-area: nineHourTime;
+    margin-left: 5px;
+    margin-top: 0;
+
+}
+
+.twelveHours {
+
+    grid-area: twelveHours;
+    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "sixImg"
+    "sixHourTemp"
+    "sixHourTime";
+
+    height: 123px;
+    width: 72px;
+    border-radius: 50px;
+
+    text-align: center;
+
+    background-color: #ECECEC;
+    
+    margin-right: 4%;
+
+    display: inline-block;
+}
+
+.twelveHoursImg {
+
+    grid-area: twelveImg;
+
+    height: 22%;
+    width: 40%;
+
+    vertical-align: top;
+    justify-content: center;
+    margin-top: 5%;
+
+}
+
+.twelveHours p {
+
+    font-size: 20px;  
+}
+
+.twelveHourTemp {
+    grid-area: twelveHourTemp;
+    margin: 20% 0 0 0;
+}
+
+hr {
+    width: 40%;
+}
+
+.twelveHourTempText {
+
+    text-align: center;
+    
+
+}
+
+#twelveHourTime {
+
+    grid-area: twelveHourTime;
+    margin-left: 5px;
+    margin-top: 0;
+
+}
+
 
 /*Index Cards*/
 
@@ -50,17 +386,8 @@ h1 {
     display: grid;
     grid-template: repeat(12, auto);
     grid-template-areas: 
-    "miniUV miniPollen"
-    "miniWeather miniWeather"
-    "miniFlood miniFlood"
-    "uv uv"
-    "uv uv"
-    "pollen pollen"
-    "pollen pollen"
-    "weather weather"
-    "weather weather"
-    "flood flood"
-    "flood flood";
+    "feelsLike highLow"
+    "humidity sunsetSunrise";
 }
 
 #feelsLike {
@@ -69,7 +396,7 @@ h1 {
     height: 114px;
     width: 180px;
     background-color: #FFFFFF;
-    border-radius: 12px;
+    border-radius: 30px;
     margin: 10px 10px 10px 21px;
 
     text-align: center;
@@ -83,7 +410,7 @@ h1 {
     height: 114px;
     width: 180px;
     background-color: #FFFFFF;
-    border-radius: 12px;
+    border-radius: 30px;
     margin: 10px 10px 10px 21px;
 
     text-align: center;
@@ -97,7 +424,7 @@ h1 {
     height: 114px;
     width: 180px;
     background-color: #FFFFFF;
-    border-radius: 12px;
+    border-radius: 30px;
     margin: 10px 10px 10px 21px;
 
     text-align: center;
@@ -111,7 +438,7 @@ h1 {
     height: 114px;
     width: 180px;
     background-color: #FFFFFF;
-    border-radius: 12px;
+    border-radius: 30px;
     margin: 10px 10px 10px 21px;
 
     text-align: center;
