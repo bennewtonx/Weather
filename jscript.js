@@ -1,6 +1,7 @@
 const apiKey = "30eb778dde414e85e06c8f0f558ecdef";
 const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
 
+
 const searchBar = document.querySelector(".search input")
 const searchBtn = document.querySelector(".search button")
 
@@ -10,6 +11,10 @@ async function checkWeather (cityName) {
     var data = await response.json();
 
     document.querySelector(".cityPlaceholder").innerHTML = cityName
+    document.querySelector(".temp").innerHTML = Math.round(data.main.temp) + "°C";
+    document.querySelector(".wind").innerHTML = (data.main.wind) + "mph";
+    document.querySelector(".temp").innerHTML = Math.round(data.main.visibility);
+
 
 
     if(data.weather[0].main == "Sunny") {

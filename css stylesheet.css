@@ -79,7 +79,7 @@ h1 {
     ". cityName cityName ."
     ". mainCityImg mainCityImg ."
     "temp temp temp temp"
-    "tempForecast tempForecast tempForecast tempForecast";
+    "wind visibility";
 
     height: 428px;
     width: 390px;
@@ -123,282 +123,36 @@ h1 {
     grid-area: temp;
 }
 
-/*Weather Forecast*/
-
-.tempForecast {
-
-    grid-area: tempForecast;
+.additionalstuff {
     display: flex;
     flex-wrap: nowrap;
-    margin: 0 4% 0 4%;
-    justify-content: space-evenly;
+    justify-content: space-around;
+}
+
+.wind {
+
+    grid-area: wind;
+}
+
+.visibility {
+
+    grid-area: visibility;
+
+}
+#windImg {
+
+        height: 70px;
+        padding: 0 0 0 0;
     
 }
 
-.threeHours {
+#visibilityImg {
 
-    grid-area: threeHours;
-    
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: 
-    "threeImg"
-    "threeHourTemp"
-    "threeHourTime";
+    height: 70px;
 
-    height: 123px;
-    width: 72px;
-    border-radius: 50px;
-
-    text-align: center;
-
-    background-color: #ECECEC;
-    
-    margin: 0 4% 0 4%;
-
-    display: inline-block;
-}
-
-.threeHoursImg {
-
-    grid-area: threeImg;
-
-    height: 22%;
-    width: 40%;
-
-    vertical-align: top;
-    justify-content: center;
-    margin-top: 5%;
+    padding: 0 0 0 0;
 
 }
-
-.threeHours p {
-
-    font-size: 20px;  
-}
-
-.threeHourTemp {
-    grid-area: threeHourTemp;
-    margin: 20% 0 0 0;
-}
-
-hr {
-    width: 40%;
-}
-
-.threeHourTempText {
-
-    text-align: center;
-    
-
-}
-
-#threeHourTime {
-
-    grid-area: threeHourTime;
-    margin-left: 5px;
-    margin-top: 0;
-
-}
-
-.sixHours {
-
-    grid-area: threeHours;
-    
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: 
-    "sixImg"
-    "sixHourTemp"
-    "sixHourTime";
-
-    height: 123px;
-    width: 72px;
-    border-radius: 50px;
-
-    text-align: center;
-
-    background-color: #ECECEC;
-    
-    margin-right: 4%;
-
-    display: inline-block;
-}
-
-.sixHoursImg {
-
-    grid-area: sixImg;
-
-    height: 22%;
-    width: 40%;
-
-    vertical-align: top;
-    justify-content: center;
-    margin-top: 5%;
-
-}
-
-.sixHours p {
-
-    font-size: 20px;  
-}
-
-.sixHourTemp {
-    grid-area: sixHourTemp;
-    margin: 20% 0 0 0;
-}
-
-hr {
-    width: 40%;
-}
-
-.sixHourTempText {
-
-    text-align: center;
-    
-
-}
-
-#sixHourTime {
-
-    grid-area: sixHourTime;
-    margin-left: 5px;
-    margin-top: 0;
-
-}
-
-.nineHours {
-
-    grid-area: threeHours;
-    
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: 
-    "nineImg"
-    "nineHourTemp"
-    "nineHourTime";
-
-    height: 123px;
-    width: 72px;
-    border-radius: 50px;
-
-    text-align: center;
-
-    background-color: #ECECEC;
-    
-    margin-right: 4%;
-
-    display: inline-block;
-}
-
-.nineHoursImg {
-
-    grid-area: nineImg;
-
-    height: 22%;
-    width: 40%;
-
-    vertical-align: top;
-    justify-content: center;
-    margin-top: 5%;
-
-}
-
-.nineHours p {
-
-    font-size: 20px;  
-}
-
-.nineHourTemp {
-    grid-area: nineHourTemp;
-    margin: 20% 0 0 0;
-}
-
-hr {
-    width: 40%;
-}
-
-.nineHourTempText {
-
-    text-align: center;
-    
-
-}
-
-#nineHourTime {
-
-    grid-area: nineHourTime;
-    margin-left: 5px;
-    margin-top: 0;
-
-}
-
-.twelveHours {
-
-    grid-area: twelveHours;
-    
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: 
-    "sixImg"
-    "sixHourTemp"
-    "sixHourTime";
-
-    height: 123px;
-    width: 72px;
-    border-radius: 50px;
-
-    text-align: center;
-
-    background-color: #ECECEC;
-    
-    margin-right: 4%;
-
-    display: inline-block;
-}
-
-.twelveHoursImg {
-
-    grid-area: twelveImg;
-
-    height: 22%;
-    width: 40%;
-
-    vertical-align: top;
-    justify-content: center;
-    margin-top: 5%;
-
-}
-
-.twelveHours p {
-
-    font-size: 20px;  
-}
-
-.twelveHourTemp {
-    grid-area: twelveHourTemp;
-    margin: 20% 0 0 0;
-}
-
-hr {
-    width: 40%;
-}
-
-.twelveHourTempText {
-
-    text-align: center;
-    
-
-}
-
-#twelveHourTime {
-
-    grid-area: twelveHourTime;
-    margin-left: 5px;
-    margin-top: 0;
-
-}
-
 
 /*Index Cards*/
 
