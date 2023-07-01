@@ -3,7 +3,7 @@
 body {
     background-color: #ECECEC;
     width: 438px;
-    padding: 0 4% 4% 5%;
+    padding: 0 0 4% 0;
 }
 
 h1, h3, p {
@@ -13,6 +13,12 @@ h1, h3, p {
 h1 {
     font-size: 36px;
 }
+
+.cityName h3 {
+
+     font-size: 20;
+}
+
 
 /*.blur {
 
@@ -29,12 +35,21 @@ h1 {
     grid-template: repeat(2, 3fr);
     grid-template-areas: 
     "title title title"
-    "searchBar searchBar locationButton";
 }
 
 .title {
     grid-area: title;
     text-align: center;
+}
+
+.search {
+
+    width: 438px;
+    display: grid;
+    grid-template: repeat(2, 3fr);
+    grid-template-areas: 
+    "searchBar searchBar locationButton";
+
 }
 
 .searchBar {
@@ -76,14 +91,20 @@ h1 {
 
 }
 
+.citySearchInfo {
+
+    justify-content: center;
+    text-align: center;
+    width: 390px;
+
+    
+}
+
 .cityName {
 
     grid-area: cityName;
     font-size: 20px;
     text-align: center;
-
-    border-bottom: solid;
-    border-width: thin;
 
     margin-bottom: 5%;
 
