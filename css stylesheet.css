@@ -6,7 +6,7 @@ body {
     padding: 0 0 4% 0;
 }
 
-h1, h3, p {
+h1, h2, h3, p {
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -79,7 +79,7 @@ h1 {
     ". cityName cityName ."
     ". mainCityImg mainCityImg ."
     "temp temp temp temp"
-    "wind visibility";
+    "wind humidity";
 
     height: 428px;
     width: 390px;
@@ -134,9 +134,9 @@ h1 {
     grid-area: wind;
 }
 
-.visibility {
+.humidity {
 
-    grid-area: visibility;
+    grid-area: humidity;
 
 }
 #windImg {
@@ -146,7 +146,7 @@ h1 {
     
 }
 
-#visibilityImg {
+#humidityImg {
 
     height: 70px;
 
@@ -162,7 +162,7 @@ h1 {
     grid-template: repeat(12, auto);
     grid-template-areas: 
     "feelsLike highLow"
-    "humidity sunsetSunrise";
+    "visibility sunsetSunrise";
 }
 
 #feelsLike {
@@ -175,8 +175,9 @@ h1 {
     margin: 10px 10px 10px 21px;
 
     text-align: center;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: medium;
+    
 }
 
 #highLow {
@@ -193,8 +194,8 @@ h1 {
     font-weight: medium;
 }
 
-#humidity {
-    grid-area: humidity;
+#visibility {
+    grid-area: visibility;
 
     height: 114px;
     width: 180px;
