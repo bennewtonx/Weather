@@ -5,12 +5,22 @@ const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=metric&q="
 const searchBar = document.querySelector(".search input")
 const searchBtn = document.querySelector(".search button")
 
-
 async function checkWeather (cityName) {
     const response = await fetch(apiUrl + cityName + `&appid=${apiKey}`);
     var data = await response.json();
 
-console.log(data);
+const rise = new Date((data.sys.sunrise )*1000);
+
+    let riseHrs = rise.getHours();
+    let riseMin = rise.getMinutes();
+    let sunrise = `${riseHrs}:${riseMin}`;
+
+const set = new Date((data.sys.sunset )*1000);
+
+    let setHrs = set.getHours();
+    let setMin = set.getMinutes();
+    let sunset = `${setHrs}:${setMin}`;
+
 
     document.querySelector(".cityPlaceholder").innerHTML = cityName
     document.querySelector(".temp").innerHTML = Math.round(data.main.temp) + "°C";
@@ -20,12 +30,8 @@ console.log(data);
     document.querySelector("#high").innerHTML = "high:" + " " + Math.round(data.main.temp_max) + "°C";
     document.querySelector("#low").innerHTML = "low:" + " " + Math.round(data.main.temp_min) + "°C";
     document.querySelector("#visibilityText").innerHTML = "visibility:" + " " + (data.visibility);
-    document.querySelector("#sunriseText").innerHTML = "sunrise:" + " " + Math.floor(data.sys.sunrise) + "AM";
-    document.querySelector("#sunsetText").innerHTML = "sunset" + " " + (data.sunset) + "PM";
-
-
-
-
+    document.querySelector("#sunriseText").innerHTML = "sunrise:" + " " + (sunrise);
+    document.querySelector("#sunsetText").innerHTML = "sunset:" + " " + (sunset);
 
     if(data.weather[0].main == "Sunny") {
         mainCityImg.src = "sun emoji.png";
@@ -50,8 +56,8 @@ console.log(data);
 
 searchBtn.addEventListener("click", ()=>{
     checkWeather(searchBar.value);
-
 })
+
 
 
 
