@@ -59,7 +59,13 @@ h1 {
     grid-area: locationButton;
     height: 90%;
     width: 60%;
+    border: none;
+    
+}
 
+.searchButton img {
+
+    height: 30px;
 }
 
 /*City Weather*/

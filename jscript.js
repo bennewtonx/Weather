@@ -34,13 +34,13 @@ const set = new Date((data.sys.sunset )*1000);
     document.querySelector("#sunsetText").innerHTML = "sunset:" + " " + (sunset);
 
     if(data.weather[0].main == "Sunny") {
-        mainCityImg.src = "sun emoji.png";
+        mainCityImg.src = "sunny.png";
     }
     if(data.weather[0].main == "Clouds") {
         mainCityImg.src = "cloud emoji.png";
     }
     else if (data.weather[0].main == "Clear") {
-        mainCityImg.src = "sun emoji.png";
+        mainCityImg.src = "sunny.png";
     }
     else if (data.weather[0].main == "Rain") {
         mainCityImg.src = "Rain Cloud.png";
