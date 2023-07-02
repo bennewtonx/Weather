@@ -1,0 +1,508 @@
+h1, h2, h3, p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+.cityName h3 {
+
+     font-size: 20;
+}
+
+
+body {
+    background-color: #ECECEC;
+    width: 438px;
+    padding: 0 0 4% 0;
+}
+
+
+
+/*Header & Search Bar*/
+.header {
+    height: 153px;
+    width: 438px;
+    display: grid;
+    grid-template: repeat(2, 3fr);
+    grid-template-areas: 
+    "title title title";
+}
+
+.title {
+    grid-area: title;
+    text-align: center;
+}
+
+.search {
+
+    width: 438px;
+    display: grid;
+    grid-template: repeat(2, 3fr);
+    grid-template-areas: 
+    "searchBar searchBar locationButton";
+
+}
+
+.searchBar {
+    grid-area: searchBar;
+    height: 90%;
+    width: 90%;
+    border: none;
+    font-size: 20px;
+    margin: 0 0 0 21px;
+    border-radius: 12px;
+
+}
+
+.searchButton {
+    grid-area: locationButton;
+    height: 90%;
+    width: 60%;
+    border: none;
+    
+}
+
+.searchButton img {
+
+    height: 30px;
+}
+
+/*City Weather*/
+
+.cityWeather {
+
+    display: grid;
+
+    grid-template: repeat(4, 4fr);
+    grid-template-areas: 
+    ". cityName cityName ."
+    ". mainCityImg mainCityImg ."
+    "temp temp temp temp"
+    "wind humidity";
+
+    height: 428px;
+    width: 390px;
+    border-radius: 60px;
+    margin: 4% 4% 4% 4%;
+    padding: 0 0 4% 0;
+
+    background-color: #D9D9D9;
+    box-shadow: 1px 1px;
+
+
+}
+
+.citySearchInfo {
+
+    justify-content: center;
+    text-align: center;
+    width: 390px;
+
+    
+}
+
+.cityName {
+
+    grid-area: cityName;
+    font-size: 20px;
+    text-align: center;
+
+    margin-bottom: 5%;
+
+}
+
+#mainCityImg {
+
+    grid-area: mainCityImg;
+    height: 140px;
+    max-width: 100%;
+    padding: 5% 25% 0 22%;
+
+}
+
+.temp {
+    grid-area: temp;
+}
+
+.additionalstuff {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+.wind {
+
+    grid-area: wind;
+}
+
+.humidity {
+
+    grid-area: humidity;
+
+}
+#windImg {
+
+        height: 70px;
+        padding: 0 0 0 0;
+    
+}
+
+#humidityImg {
+
+    height: 70px;
+
+    padding: 0 0 0 0;
+
+}
+
+/*Index Cards*/
+
+.indexCards {
+    width: 386px;
+    display: grid;
+    grid-template: repeat(12, auto);
+    grid-template-areas: 
+    "feelsLike highLow"
+    "visibility sunsetSunrise";
+}
+
+#feelsLike {
+    grid-area: feelsLike;
+
+    height: 114px;
+    width: 180px;
+    background-color: #FFFFFF;
+    border-radius: 30px;
+    margin: 10px 10px 10px 21px;
+
+    text-align: center;
+    font-size: 22px;
+    font-weight: medium;
+
+    box-shadow: 1px 1px;
+    
+}
+
+#highLow {
+    grid-area: highLow;
+
+    height: 114px;
+    width: 180px;
+    background-color: #FFFFFF;
+    border-radius: 30px;
+    margin: 10px 10px 10px 21px;
+
+    text-align: center;
+    font-size: 20px;
+    font-weight: medium;
+
+    box-shadow: 1px 1px;
+}
+
+#visibility {
+    grid-area: visibility;
+
+    height: 114px;
+    width: 180px;
+    background-color: #FFFFFF;
+    border-radius: 30px;
+    margin: 10px 10px 10px 21px;
+
+    text-align: center;
+    font-size: 20px;
+    font-weight: medium;
+
+    box-shadow: 1px 1px;
+}
+
+#sunsetSunrise {
+    grid-area: sunsetSunrise;
+
+    height: 114px;
+    width: 180px;
+    background-color: #FFFFFF;
+    border-radius: 30px;
+    margin: 10px 10px 10px 21px;
+
+    text-align: center;
+    font-size: 20px;
+    font-weight: medium;
+
+    box-shadow: 1px 1px;
+}
+
+/* For Tablet View */
+@media screen and (min-device-width: 550px){
+    body {
+        width: 100%;
+    }
+
+    .header {
+        height: 153px;
+        width: 100%;
+        display: grid;
+        grid-template: repeat(2, 3fr);
+        grid-template-areas: 
+        "title title title"
+        "search search search";
+    }
+    .title {
+        grid-area: title;
+        text-align: center;
+    }
+    
+    .search {
+    
+        grid-area: search;
+        width: 100%;
+        justify-content: center;
+    
+    }
+    
+    .searchBar {
+
+        height: 50px;
+        width: 300px;
+        margin: 0 0 0 21px;
+    
+    }
+    
+    .searchButton {
+        height: 90%;
+        width: 50px;       
+    }
+    
+    .searchButton img {
+    
+        height: 30px;
+    }
+
+    .container {
+        display: grid;
+        grid-template-areas:
+        "cityWeather indexCards";
+        
+    }
+    .cityWeather {
+    
+        height: 428px;
+        width: 500px;
+        margin: 40px 20px 0 4%;
+        padding: 0 0 4% 0;
+    
+    }
+    
+    .citySearchInfo {
+
+        width: 500px;
+       
+    }
+    
+    .cityName {
+    
+        margin-bottom: 5%;
+    
+    }
+    
+    #mainCityImg {
+    
+        height: 140px;
+        padding: 2% 25% 0 22%;
+    
+    }
+ 
+    
+    /*Index Cards*/
+    
+    .indexCards {
+
+        margin: 40px 0 0 0;
+        width: 400px;
+    }
+    
+    #feelsLike {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        height: 210px;
+        width: 200px;
+        margin: 0 20px 30px 0;
+        
+    }
+    
+    #highLow {
+
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    
+        height: 210px;
+        width: 200px;
+        margin: 0 10px 30px 0;
+    }
+    
+    #visibility {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        height: 210px;
+        width: 200px;
+        margin: 0 20px 10px 0;
+    }
+    
+    #sunsetSunrise {
+
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    
+        height: 210px;
+        width: 200px;
+        margin: 0 10px 10px 0;
+    }
+}
+
+/* For Desktop View */
+@media screen and (min-width: 1024px) {
+    body {
+        width: 100%;
+    }
+
+    .header {
+        height: 153px;
+        width: 100%;
+        display: grid;
+        grid-template: repeat(2, 3fr);
+        grid-template-areas: 
+        "title title title"
+        "search search search";
+    }
+    .title {
+        grid-area: title;
+        text-align: center;
+    }
+    
+    .search {
+    
+        grid-area: search;
+        width: 100%;
+        justify-content: center;
+    
+    }
+    
+    .searchBar {
+
+        height: 50px;
+        width: 400px;
+        margin: 0 0 0 21px;
+    
+    }
+    
+    .searchButton {
+        height: 90%;
+        width: 50px;       
+    }
+    
+    .searchButton img {
+    
+        height: 30px;
+    }
+
+    .container {
+        display: grid;
+        grid-template-areas:
+        "cityWeather indexCards";
+        
+    }
+    .cityWeather {
+    
+        height: 428px;
+        width: 800px;
+        margin: 40px 20px 0 4%;
+        padding: 0 0 4% 0;
+    
+    }
+    
+    .citySearchInfo {
+
+        width: 800px;
+       
+    }
+    
+    .cityName {
+    
+        margin-bottom: 5%;
+    
+    }
+    
+    #mainCityImg {
+    
+        height: 140px;
+        padding: 2% 25% 0 22%;
+    
+    }
+ 
+    
+    /*Index Cards*/
+    
+    .indexCards {
+
+        margin: 40px 0 0 0;
+        width: 500px;
+    }
+    
+    #feelsLike {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        height: 218px;
+        width: 200px;
+        margin: 0 10px 30px 0;
+        
+    }
+    
+    #highLow {
+
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    
+        height: 218px;
+        width: 200px;
+        margin: 0 10px 30px 0;
+    }
+    
+    #visibility {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        height: 218px;
+        width: 200px;
+        margin: 0 10px 10px 0;
+    }
+    
+    #sunsetSunrise {
+
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    
+        height: 218px;
+        width: 200px;
+        margin: 0 10px 10px 0;
+    }
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Simple Weather</title>
+    <link rel="stylesheet" href="css stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500;800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="header">
+
+    <h1 class="title">WEATHER</h1>
+    <div class="search">
+    <input type="text" class="searchBar" id="citySearch" placeholder="Enter a Town, City or UK Postcode">
+    <button class="searchButton"><img src="magnifying glass.png"></button>
+    </div>
+
+</div>
+
+<div class="blur">
+
+    <div class="container">
+
+<div class="cityWeather">
+    <div class="citySearchInfo">
+    <div class="cityName">
+        <h3 class="cityPlaceholder">search for a city</h3>
+    </div>
+
+    <img id="mainCityImg"src="sunny.png">
+
+    <h2 class="temp"></h2>
+
+    </div>
+
+    <div class="additionalstuff">
+    
+    <div class="wind">
+
+        <img id="windImg"src="wind.png">
+
+        <div>
+            <h3 class="windText"></h3>
+        </div>
+    </div>
+
+    <div class="humidity">
+
+        <img id="humidityImg"src="humidity.png">
+
+        <div>
+            <h3 class="humidityText"></h3>
+        </div>
+    </div>
+</div>
+</div>
+
+    <div class="indexCards">
+
+        <div id="feelsLike">
+
+            <h3 id="feelsLikeText">feels like:</h3>
+
+        </div>
+
+        <div id="highLow"> 
+
+            <h3 id="high">high:</h3>
+            <h3 id="low">low:</h3>
+
+        </div>
+
+        <div id="visibility"> 
+
+            <h3 id="visibilityText">visibility:</h3>
+
+        </div>
+
+        <div id="sunsetSunrise"> 
+
+            <h3 id="sunriseText">sunrise:</h3>
+            <h3 id="sunsetText">sunset:</h3>
+
+        </div>
+
+    </div>
+
+</div>
+</div>
+
+<script src="jscript.js"></script>
+
+</body>
