@@ -21,7 +21,6 @@ const set = new Date((data.sys.sunset )*1000);
     let setMin = set.getMinutes();
     let sunset = `${setHrs}:${setMin}`;
 
-
     document.querySelector(".cityPlaceholder").innerHTML = cityName
     document.querySelector(".temp").innerHTML = Math.round(data.main.temp) + "°C";
     document.querySelector(".windText").innerHTML = (data.wind.speed) + "mph";
@@ -57,7 +56,5 @@ const set = new Date((data.sys.sunset )*1000);
 searchBtn.addEventListener("click", ()=>{
     checkWeather(searchBar.value);
 })
-
-
 
 

@@ -1,3 +1,4 @@
+/*General Page Styling*/
 h1, h2, h3, p {
     font-family: 'Montserrat', sans-serif;
 }
@@ -11,14 +12,11 @@ h1 {
      font-size: 20;
 }
 
-
 body {
     background-color: #ECECEC;
     width: 438px;
     padding: 0 0 4% 0;
 }
-
-
 
 /*Header & Search Bar*/
 .header {
@@ -42,7 +40,6 @@ body {
     grid-template: repeat(2, 3fr);
     grid-template-areas: 
     "searchBar searchBar locationButton";
-
 }
 
 .searchBar {
@@ -53,7 +50,6 @@ body {
     font-size: 20px;
     margin: 0 0 0 21px;
     border-radius: 12px;
-
 }
 
 .searchButton {
@@ -61,7 +57,6 @@ body {
     height: 90%;
     width: 60%;
     border: none;
-    
 }
 
 .searchButton img {
@@ -70,7 +65,6 @@ body {
 }
 
 /*City Weather*/
-
 .cityWeather {
 
     display: grid;
@@ -90,8 +84,6 @@ body {
 
     background-color: #D9D9D9;
     box-shadow: 1px 1px;
-
-
 }
 
 .citySearchInfo {
@@ -99,8 +91,6 @@ body {
     justify-content: center;
     text-align: center;
     width: 390px;
-
-    
 }
 
 .cityName {
@@ -110,7 +100,6 @@ body {
     text-align: center;
 
     margin-bottom: 5%;
-
 }
 
 #mainCityImg {
@@ -119,7 +108,6 @@ body {
     height: 140px;
     max-width: 100%;
     padding: 5% 25% 0 22%;
-
 }
 
 .temp {
@@ -144,21 +132,18 @@ body {
 }
 #windImg {
 
-        height: 70px;
-        padding: 0 0 0 0;
+    height: 70px;
+    padding: 0 0 0 0;
     
 }
 
 #humidityImg {
 
     height: 70px;
-
     padding: 0 0 0 0;
-
 }
 
 /*Index Cards*/
-
 .indexCards {
     width: 386px;
     display: grid;
@@ -182,7 +167,6 @@ body {
     font-weight: medium;
 
     box-shadow: 1px 1px;
-    
 }
 
 #highLow {
@@ -235,6 +219,7 @@ body {
 
 /* For Tablet View */
 @media screen and (min-device-width: 550px){
+
     body {
         width: 100%;
     }
@@ -254,19 +239,15 @@ body {
     }
     
     .search {
-    
         grid-area: search;
         width: 100%;
         justify-content: center;
-    
     }
     
     .searchBar {
-
         height: 50px;
-        width: 300px;
+        width: 500px;
         margin: 0 0 0 21px;
-    
     }
     
     .searchButton {
@@ -275,7 +256,6 @@ body {
     }
     
     .searchButton img {
-    
         height: 30px;
     }
 
@@ -283,47 +263,35 @@ body {
         display: grid;
         grid-template-areas:
         "cityWeather indexCards";
-        
     }
+
     .cityWeather {
-    
         height: 428px;
         width: 500px;
         margin: 40px 20px 0 4%;
         padding: 0 0 4% 0;
-    
     }
     
     .citySearchInfo {
-
         width: 500px;
-       
     }
     
     .cityName {
-    
         margin-bottom: 5%;
-    
     }
     
     #mainCityImg {
-    
         height: 140px;
         padding: 2% 25% 0 22%;
-    
     }
- 
     
     /*Index Cards*/
-    
     .indexCards {
-
         margin: 40px 0 0 0;
         width: 400px;
     }
     
     #feelsLike {
-
         display: flex;
         align-items: center;
         justify-content: center;
@@ -331,11 +299,9 @@ body {
         height: 210px;
         width: 200px;
         margin: 0 20px 30px 0;
-        
     }
     
     #highLow {
-
         display: flex;
         flex-wrap: wrap;
         align-items: center;
@@ -347,7 +313,6 @@ body {
     }
     
     #visibility {
-
         display: flex;
         align-items: center;
         justify-content: center;
@@ -358,7 +323,6 @@ body {
     }
     
     #sunsetSunrise {
-
         display: flex;
         flex-wrap: wrap;
         align-items: center;
@@ -372,6 +336,7 @@ body {
 
 /* For Desktop View */
 @media screen and (min-width: 1024px) {
+
     body {
         width: 100%;
     }
@@ -385,25 +350,22 @@ body {
         "title title title"
         "search search search";
     }
+
     .title {
         grid-area: title;
         text-align: center;
     }
     
     .search {
-    
         grid-area: search;
         width: 100%;
         justify-content: center;
-    
     }
     
     .searchBar {
-
         height: 50px;
-        width: 400px;
+        width: 600px;
         margin: 0 0 0 21px;
-    
     }
     
     .searchButton {
@@ -412,7 +374,6 @@ body {
     }
     
     .searchButton img {
-    
         height: 30px;
     }
 
@@ -420,47 +381,34 @@ body {
         display: grid;
         grid-template-areas:
         "cityWeather indexCards";
-        
     }
     .cityWeather {
-    
         height: 428px;
         width: 800px;
         margin: 40px 20px 0 4%;
         padding: 0 0 4% 0;
-    
     }
     
     .citySearchInfo {
-
         width: 800px;
-       
     }
     
     .cityName {
-    
         margin-bottom: 5%;
-    
     }
     
     #mainCityImg {
-    
         height: 140px;
         padding: 2% 25% 0 22%;
-    
     }
  
-    
     /*Index Cards*/
-    
     .indexCards {
-
         margin: 40px 0 0 0;
         width: 500px;
     }
     
     #feelsLike {
-
         display: flex;
         align-items: center;
         justify-content: center;
@@ -468,11 +416,9 @@ body {
         height: 218px;
         width: 200px;
         margin: 0 10px 30px 0;
-        
     }
     
     #highLow {
-
         display: flex;
         flex-wrap: wrap;
         align-items: center;
@@ -484,7 +430,6 @@ body {
     }
     
     #visibility {
-
         display: flex;
         align-items: center;
         justify-content: center;
@@ -495,7 +440,6 @@ body {
     }
     
     #sunsetSunrise {
-
         display: flex;
         flex-wrap: wrap;
         align-items: center;
